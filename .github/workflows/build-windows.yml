@@ -31,6 +31,7 @@ jobs:
           pyinstaller --noconfirm --onefile --windowed `
             --name KMLI `
             --add-data "database/db_kmli.db;database" `
+            --add-data "asset;asset" `
             main.py
 
       - name: Upload hasil build
